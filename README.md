@@ -37,19 +37,10 @@ mongoimport -d nhq -c FD_GROUP --type csv --file D:\WEBDEV\react\nutritionhq\src
 
 * Check with RoboMongo
 
+* `npm install --save mongoose`
 
-
-
-
-
-
-
-
-
-
-
-
-
+* Schema template model: https://github.com/csjcode/mongo-upstarmusic/blob/master/database/models/artist.js
+* Schema template model: https://github.com/csjcode/mongo-upstarmusic/blob/master/database/models/album.js
 
 
 ===========================================
