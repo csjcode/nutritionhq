@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import mongoose, { Component } from 'mongoose';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import logo from './logo.svg';
