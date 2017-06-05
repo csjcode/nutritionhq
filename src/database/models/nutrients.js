@@ -23,4 +23,4 @@ const NutrientsSchema = new Schema({
 // Todo: create Album Schema
 
 
-module.exports = AlbumSchema;
+module.exports = NutrientsSchema;
