@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import AppBar from 'material-ui/AppBar';
+import SubheaderNav from './SubheaderNav';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,10 +14,14 @@ class App extends Component {
       <MuiThemeProvider>
         <div className="App">
           <AppBar
+            style={{backgroundColor:'#262626', fontWeight:'bold'}}
             title="HealthBenefits.io"
             iconClassNameRight="muidocs-icon-navigation-expand-more"
           />
-          <div style={{backgroundColor:'#000', color:'white', fontSize:'16px', padding:'10px'}}>
+
+          <SubheaderNav />
+
+          <div style={{backgroundColor:'#0092ac', color:'white', fontSize:'16px', padding:'10px'}}>
             This is a submenu
           </div>
           <div style={{backgroundColor:'#fff', color:'#000', fontSize:'14px', padding:'20px', textAlign: 'left'}}>
