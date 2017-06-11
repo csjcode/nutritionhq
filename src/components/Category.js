@@ -6,13 +6,13 @@ import 'antd/dist/antd.css';
 import logo from '../images/logo.svg';
 import '../css/Category.css';
 import HeaderMain from './HeaderMain';
-import ContentContainer from './ContentContainer';
+import CategoryContainer from './content/CategoryContainer';
 import Foods from './Foods';
 
 class Category extends Component {
 
-  constructor (props) {
-    super(props);
+  constructor (props, {match}) {
+    super(props,{match});
   }
 
 
@@ -23,13 +23,17 @@ class Category extends Component {
           <HeaderMain />
           <Content style={{ padding: '0 50px', marginTop: 64 }}>
             <Breadcrumb style={{ margin: '12px 0', fontSize:16 }}>
-              <Breadcrumb.Item>Category</Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
             </Breadcrumb>
-            <ContentContainer />
+
+
+
+            <CategoryContainer pagename={this.props.match.params.category} />
+
+
 
           </Content>
           <Footer style={{ textAlign: 'center' }}>

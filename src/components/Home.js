@@ -6,7 +6,7 @@ import 'antd/dist/antd.css';
 import logo from '../images/logo.svg';
 import '../css/Home.css';
 import HeaderMain from './HeaderMain';
-import ContentContainer from './ContentContainer';
+import HomeContainer from './content/HomeContainer';
 import Foods from './Foods';
 
 class Home extends Component {
@@ -28,7 +28,7 @@ class Home extends Component {
               <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
             </Breadcrumb>
-            <ContentContainer />
+            <HomeContainer />
 
           </Content>
           <Footer style={{ textAlign: 'center' }}>
