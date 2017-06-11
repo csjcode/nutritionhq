@@ -1,29 +1,58 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import FontIcon from 'material-ui/FontIcon';
-import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
+import TextField from 'material-ui/TextField';
+
+const styles = {
+  headline: {
+    fontSize: 24,
+    paddingTop: 16,
+    marginBottom: 12,
+    fontWeight: 400,
+  },
+};
+
+function handleActive(tab) {
+  alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
+}
 
 const SubheaderNav = () => (
-
-
   <Tabs>
+    <Tab label="Item One" >
+      <div>
+        <h2 style={styles.headline}>Tab One</h2>
+        <p>
+          This is an example tab.
+        </p>
+        <p>
+          You can put any sort of HTML or react component in here. It even keeps the component state!
+        </p>
+        <TextField />
+      </div>
+    </Tab>
+    <Tab label="Item Two" >
+      <div>
+        <h2 style={styles.headline}>Tab Two</h2>
+        <p>
+          This is another example tab.
+        </p>
+      </div>
+    </Tab>
     <Tab
-      icon={<FontIcon className="material-icons">phone</FontIcon>}
-      label="FOODS"
-    />
-    <Tab
-      icon={<FontIcon className="material-icons">favorite</FontIcon>}
-      label="RECIPES"
-    />
-    <Tab
-      icon={<MapsPersonPin />}
-      label="RESEARCH"
-    />
-    <Tab
-      icon={<MapsPersonPin />}
-      label="MY SAVED"
-    />
+      label="onActive"
+      data-route="/home"
+      onActive={handleActive}
+    >
+      <div>
+        <h2 style={styles.headline}>Tab Three</h2>
+        <p>
+          This is a third example tab.
+        </p>
+      </div>
+    </Tab>
+
   </Tabs>
+
+
 );
 
 export default SubheaderNav;
