@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import { Layout, Menu, Breadcrumb, Header } from 'antd';
 import 'antd/dist/antd.css';
+import Foods from './Foods.js';
 
 class HeaderMain extends Component {
   render() {
     const { Header, Content, Footer } = Layout;
     return(
-      <Router>
         <Header style={{ position: 'fixed', width: '100%' }}>
           <div className="logo" />
           <Menu
@@ -23,7 +23,6 @@ class HeaderMain extends Component {
             <Menu.Item key="5"><Link to="/News">News</Link></Menu.Item>
           </Menu>
         </Header>
-      </Router>
     );
   }
 }

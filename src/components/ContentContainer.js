@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import mongoose from 'mongoose';
+import FontAwesome from 'react-fontawesome';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import 'antd/dist/antd.css';
+import '../css/ContentContainer.css';
 
 class ContentContainer extends Component {
   render() {
@@ -11,7 +13,14 @@ class ContentContainer extends Component {
           <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px', paddingTop:'5', textAlign: 'left'}}>
 
             <h1 style={{fontSize:'22', marginTop:'0'}}>Spinach</h1>
-            <Icon type="" />
+
+            <FontAwesome
+              className='super-crazy-colors'
+              name='recycle'
+              size='2x'
+              spin
+              style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+            />
 
             <p>Spinach (Spinacia oleracea) is an edible flowering plant in the family Amaranthaceae native to central and western Asia. Its leaves are eaten as a vegetable.</p>
 
