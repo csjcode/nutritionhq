@@ -4,12 +4,12 @@ import mongoose from 'mongoose';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
 import logo from '../images/logo.svg';
-import '../css/App.css';
+import '../css/Home.css';
 import HeaderMain from './HeaderMain';
 import ContentContainer from './ContentContainer';
 import Foods from './Foods';
 
-class App extends Component {
+class Home extends Component {
 
   constructor (props) {
     super(props);
@@ -42,4 +42,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
