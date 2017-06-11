@@ -9,12 +9,7 @@ import HeaderMain from './HeaderMain';
 import ContentContainer from './ContentContainer';
 import Foods from './Foods';
 
-class App extends Component {
-
-  constructor (props) {
-    super(props);
-  }
-
+class App2 extends Component {
 
   render() {
     const { Header, Content, Footer } = Layout;
@@ -23,17 +18,17 @@ class App extends Component {
           <HeaderMain />
           <Content style={{ padding: '0 50px', marginTop: 64 }}>
             <Breadcrumb style={{ margin: '12px 0', fontSize:16 }}>
-              <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+              <Breadcrumb.Item><Link to="/">App2</Link></Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
               <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
+              <Breadcrumb.Item><Link to="/Spinach">Spinach</Link></Breadcrumb.Item>
             </Breadcrumb>
             <ContentContainer />
 
           </Content>
           <Footer style={{ textAlign: 'center' }}>
 
-              <p>My footer</p>
+              My footer
 
           </Footer>
         </Layout>
@@ -42,4 +37,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App2;
