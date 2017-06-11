@@ -1,3 +1,7 @@
+.logo {
+  background-image: image('logo.svg');
+}
+
 .App {
   text-align: center;
 }

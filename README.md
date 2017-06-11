@@ -42,6 +42,28 @@ mongoimport -d nhq -c FD_GROUP --type csv --file D:\WEBDEV\react\nutritionhq\src
 * Schema template model: https://github.com/csjcode/mongo-upstarmusic/blob/master/database/models/artist.js
 * Schema template model: https://github.com/csjcode/mongo-upstarmusic/blob/master/database/models/album.js
 
+* Installed Ant UI
+
+* Installed Font Awesome
+`npm install --save react-fontawesome`
+example:
+
+```
+<FontAwesome name='rocket' />
+```
+
+or
+
+```
+<FontAwesome
+  className='super-crazy-colors'
+  name='rocket'
+  size='2x'
+  spin
+  style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+/>
+```
+
 
 ===========================================
 
