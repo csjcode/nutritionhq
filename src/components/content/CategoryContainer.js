@@ -16,7 +16,8 @@ class CategoryContainer extends Component {
   render() {
     return(
         <div style={{ background: '#fff', padding: 40, minHeight: 380 }}>
-          <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px', paddingTop:'5', textAlign: 'left'}}>
+          <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px',
+            marginTop: '40',paddingTop:'15', textAlign: 'left'}}>
 
             <div style={{marginBottom:'20'}}>
               <h1 style={{fontSize:'28', marginTop:'0', marginBottom:'0'}}>{this.props.pagename}</h1>

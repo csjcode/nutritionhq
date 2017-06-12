@@ -17,18 +17,10 @@ class Item extends Component {
         <Layout>
           <HeaderMain />
           <Content style={{ padding: '0 50px', marginTop: 64 }}>
-            <Breadcrumb style={{ margin: '12px 0', fontSize:16 }}>
-              <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Spinach">Spinach</Link></Breadcrumb.Item>
-            </Breadcrumb>
             <ItemContainer pagename={this.props.match.params.item}/>
           </Content>
           <Footer style={{ textAlign: 'center' }}>
-
               My footer
-
           </Footer>
         </Layout>
 

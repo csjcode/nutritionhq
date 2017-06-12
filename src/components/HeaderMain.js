@@ -33,6 +33,12 @@ class HeaderMain extends Component {
             <Menu.Item key="4"><Link to="/Research">Research</Link></Menu.Item>
             <Menu.Item key="5"><Link to="/News">News</Link></Menu.Item>
           </Menu>
+          <Breadcrumb style={{ margin: '1px 0 10px 0', fontSize:16, backgroundColor:'#ECECEC', paddingTop:'0', paddingBottom:'0'}}>
+            <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
+          </Breadcrumb>
         </Header>
     );
   }

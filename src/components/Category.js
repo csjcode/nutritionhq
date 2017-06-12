@@ -21,23 +21,8 @@ class Category extends Component {
     return (
         <Layout>
           <HeaderMain />
-          <Content style={{ padding: '0 50px', marginTop: 55 }}>
-            <Affix offsetTop={50} onChange={affixed => console.log(affixed)}>
-              <Breadcrumb style={{ margin: '12px 0', fontSize:16, backgroundColor:'#ECECEC', padding:'10' }}>
-                <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
-                <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
-                <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
-                <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
-              </Breadcrumb>
-              
-            </Affix>
-
-
-
+          <Content style={{ padding: '0 50px', marginTop: 50 }}>
             <CategoryContainer pagename={this.props.match.params.category} />
-
-
-
           </Content>
           <Footer style={{ textAlign: 'center' }}>
 
