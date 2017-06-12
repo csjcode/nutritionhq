@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import mongoose from 'mongoose';
 import FontAwesome from 'react-fontawesome';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, Row, Col, Card } from 'antd';
 import 'antd/dist/antd.css';
 import '../../css/HomeContainer.css';
 
@@ -26,11 +26,136 @@ class HomeContainer extends Component {
               style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
             />
 
+            <Row type="flex" justify="space-around" style={{padding:'10px 0px'}}>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+            </Row>
 
+            <Row type="flex" justify="space-around" style={{padding:'10px 0px'}}>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+            </Row>
 
+            <Row type="flex" justify="space-around" style={{padding:'10px 0px'}}>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+              <Col sm={4} md={6} lg={6}>
+                <Card style={{ }} bodyStyle={{ padding: 0 }}>
+                  <div className="custom-image">
+                    <img alt="Nutrition Label" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nutrition_label.gif/234px-Nutrition_label.gif" />
+                  </div>
+                  <div className="custom-card">
+                    <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
+                  </div>
+                </Card>
+              </Col>
+            </Row>
+
+            <h1>Articles</h1>
+
+            <Row>
+
+              <Col span={8}>
+
+                The World Health Organization (WHO) defined health in its broader sense in its 1948 constitution as "a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity."[2][3] This definition has been subject to controversy, in particular as lacking operational value,
+              </Col>
+              <Col span={8}>
+
+                  Health is the level of functional and metabolic efficiency of a living organism. In humans it is the ability of individuals or communities to adapt and self-manage when facing physical, mental, psychological and social changes with environment.[1]
+
+              </Col>
+              <Col span={8}>
+
+                the ambiguity in developing cohesive health strategies, and because of the problem created by use of the word "complete".[4][5][6] Other definitions have been proposed, among which a recent definition that correlates health and personal satisfaction.[7] [8] Classification systems such as the WHO Family of International
+              </Col>
+
+            </Row>
 
             <p>
-            Health is the level of functional and metabolic efficiency of a living organism. In humans it is the ability of individuals or communities to adapt and self-manage when facing physical, mental, psychological and social changes with environment.[1] The World Health Organization (WHO) defined health in its broader sense in its 1948 constitution as "a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity."[2][3] This definition has been subject to controversy, in particular as lacking operational value, the ambiguity in developing cohesive health strategies, and because of the problem created by use of the word "complete".[4][5][6] Other definitions have been proposed, among which a recent definition that correlates health and personal satisfaction.[7] [8] Classification systems such as the WHO Family of International Classifications, including the International Classification of Functioning, Disability and Health (ICF) and the International Classification of Diseases (ICD), are commonly used to define and measure the components of health.
+
             </p>
 
 
