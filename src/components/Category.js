@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import mongoose from 'mongoose';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Affix, Layout, Menu, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
 import logo from '../images/logo.svg';
 import '../css/Category.css';
@@ -21,13 +21,16 @@ class Category extends Component {
     return (
         <Layout>
           <HeaderMain />
-          <Content style={{ padding: '0 50px', marginTop: 64 }}>
-            <Breadcrumb style={{ margin: '12px 0', fontSize:16 }}>
-              <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
-              <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
-            </Breadcrumb>
+          <Content style={{ padding: '0 50px', marginTop: 55 }}>
+            <Affix offsetTop={50} onChange={affixed => console.log(affixed)}>
+              <Breadcrumb style={{ margin: '12px 0', fontSize:16, backgroundColor:'#ECECEC', padding:'10' }}>
+                <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+                <Breadcrumb.Item><Link to="/Foods">Foods</Link></Breadcrumb.Item>
+                <Breadcrumb.Item><Link to="/Vegetables">Vegetables</Link></Breadcrumb.Item>
+                <Breadcrumb.Item><Link to="/Vegetables/Spinach">Spinach</Link></Breadcrumb.Item>
+              </Breadcrumb>
+              
+            </Affix>
 
 
 
