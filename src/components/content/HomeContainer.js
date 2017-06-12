@@ -8,6 +8,7 @@ import '../../css/HomeContainer.css';
 
 class HomeContainer extends Component {
   render() {
+
     return(
         <div style={{ background: '#fff', padding: 40, minHeight: 380 }}>
           <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px',
@@ -24,6 +25,9 @@ class HomeContainer extends Component {
               spin
               style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
             />
+
+
+
 
             <p>
             Health is the level of functional and metabolic efficiency of a living organism. In humans it is the ability of individuals or communities to adapt and self-manage when facing physical, mental, psychological and social changes with environment.[1] The World Health Organization (WHO) defined health in its broader sense in its 1948 constitution as "a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity."[2][3] This definition has been subject to controversy, in particular as lacking operational value, the ambiguity in developing cohesive health strategies, and because of the problem created by use of the word "complete".[4][5][6] Other definitions have been proposed, among which a recent definition that correlates health and personal satisfaction.[7] [8] Classification systems such as the WHO Family of International Classifications, including the International Classification of Functioning, Disability and Health (ICF) and the International Classification of Diseases (ICD), are commonly used to define and measure the components of health.
