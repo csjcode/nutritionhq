@@ -13,6 +13,8 @@ class CategoryContainer extends Component {
     super(props,{match});
   }
 
+
+
   render() {
     return(
         <div style={{ background: '#fff', padding: 40, minHeight: 380 }}>
@@ -31,6 +33,7 @@ class CategoryContainer extends Component {
               spin
               style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
             />
+
 
             <CategoryList />
             <CategoryList />
