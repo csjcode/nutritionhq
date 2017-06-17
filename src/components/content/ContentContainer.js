@@ -10,8 +10,8 @@ class ContentContainer extends Component {
   render() {
     return(
         <div style={{ background: '#fff', padding: 40, minHeight: 380 }}>
-          <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px', paddingTop:'5', textAlign: 'left'}}>
-
+          <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px',
+            marginTop: '40',paddingTop:'15', textAlign: 'left'}}>
             <h1 style={{fontSize:'22', marginTop:'0'}}>Spinach</h1>
 
             <FontAwesome

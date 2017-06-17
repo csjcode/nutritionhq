@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import mongoose from 'mongoose';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
