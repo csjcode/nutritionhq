@@ -64,6 +64,29 @@ or
 />
 ```
 
+### MongoDB
+
+
+* This is a good tutorial if problems: http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
+
+* Also for schema/model see: https://github.com/csjcode/mongodb-notes/tree/master/users
+
+* IMPORTANT: Remember that Mongoose **automatically** changes singular schema name to plural for the collection!!!!
+
+* So in this case we changed the FOOD_DES collection name in MongoDB to foods, and the schema is Food
+
+* Start MONGOD daemon
+
+* To use the database, you must use the node db_helper.js file:
+
+
+```
+D:\WEBDEV\react\nutritionhq\src\database> node db_helper.js
+
+```
+
+
+
 
 ===========================================
 
