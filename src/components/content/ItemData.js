@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 
 class ItemData extends Component {
 
@@ -8,6 +8,7 @@ class ItemData extends Component {
     super(props);
     // this.state = { page: this.props.pagename };
     this.state = { page: this.props.pagename };
+
   }
 
   componentWillMount() {
