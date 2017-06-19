@@ -102,6 +102,10 @@ D:\WEBDEV\react\nutritionhq\src\database> node db_helper.js
 
 * Add schema (also used in prior "MongoDB - test example" in db_helper.js)
 
+* List: GET /food
+http://localhost:3000/food
+
+
 
 
 
