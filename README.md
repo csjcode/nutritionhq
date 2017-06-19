@@ -102,8 +102,13 @@ D:\WEBDEV\react\nutritionhq\src\database> node db_helper.js
 
 * Add schema (also used in prior "MongoDB - test example" in db_helper.js)
 
+* Add routes and Regexp for find
+
 * List: GET /food
 http://localhost:3000/food
+
+* Search name: http://localhost:3000/food/name/Cheese
+* Search id: http://localhost:3000/food/id/1004
 
 
 
