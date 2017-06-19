@@ -22,6 +22,7 @@
 * Save as ODS
 * Resave in csv
 
+-------------------------------------------------
 
 ### MongoDB Import
 
@@ -64,7 +65,9 @@ or
 />
 ```
 
-### MongoDB
+-------------------------------------------------
+
+### MongoDB - test example
 
 
 * This is a good tutorial if problems: http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
@@ -85,10 +88,28 @@ D:\WEBDEV\react\nutritionhq\src\database> node db_helper.js
 
 ```
 
+-------------------------------------------------
+
+### API Server
+
+#### Install Express Generator for API
+
+* `D:\WEBDEV\react\nutritionhq>npm install express-generator -g`
+* Docs: https://expressjs.com/en/starter/generator.html
+
+* Use Express Generator to get Express Server started
+`express api -e`
+
+* Add schema (also used in prior "MongoDB - test example" in db_helper.js)
 
 
 
-===========================================
+
+
+
+
+
+=================================================================================================================================
 
 
 
