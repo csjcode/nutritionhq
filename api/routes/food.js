@@ -12,6 +12,7 @@ router.get('/name/:name', function(req, res, next) {
   });
 });
 
+router.get('/id/:id', function(req, res, next) {
   Food.findOne({ 'NDB_No': req.params.id }, function (err, food) {
     if (err) return next(err);
     res.json(food);
