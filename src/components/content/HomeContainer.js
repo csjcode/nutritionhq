@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import mongoose from 'mongoose';
 import FontAwesome from 'react-fontawesome';
 import { Layout, Menu, Breadcrumb, Icon, Row, Col, Card } from 'antd';
@@ -16,6 +16,7 @@ class HomeContainer extends Component {
             <div style={{marginBottom:'20'}}>
               <h1 style={{fontSize:'28', marginTop:'0', marginBottom:'0'}}>Home</h1>
               <p style={{fontSize:'16', color:'#939393'}}>This website is to help track health</p>
+              <p><Link to="http://localhost:3000/food/id/1004">1004</Link></p>
             </div>
 
             <FontAwesome
@@ -34,6 +35,7 @@ class HomeContainer extends Component {
                   </div>
                   <div className="custom-card">
                     <h3>Nutrition Info</h3>
+                    <p>Get nutritional facts!</p>
                     <p>Get nutritional facts!</p>
                   </div>
                 </Card>

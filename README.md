@@ -104,6 +104,8 @@ D:\WEBDEV\react\nutritionhq\src\database> node db_helper.js
 
 * Add routes and Regexp for find
 
+* `D:\WEBDEV\react\nutritionhq\api>nodemon`
+
 * List: GET /food
 http://localhost:3000/food
 
