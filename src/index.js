@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Home from './components/Home';
 import Category from './components/Category';
 import Item from './components/Item';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 import './css/index.css';
 

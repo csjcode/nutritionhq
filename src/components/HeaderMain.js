@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import { Layout, Menu, Breadcrumb, Header, Input } from 'antd';
 import 'antd/dist/antd.css';
-import Foods from './Foods.js';
+// import Foods from './Foods.js';
 
 class HeaderMain extends Component {
 
@@ -15,7 +15,7 @@ class HeaderMain extends Component {
   }
 
   render() {
-    const { Header, Content, Footer } = Layout;
+    const { Header } = Layout;
     const Search = Input.Search;
     return(
         <Header style={{ position: 'fixed', width: '100%', zIndex:'999' }}>

@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import mongoose from 'mongoose';
-import { Layout, Menu, Breadcrumb } from 'antd';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import mongoose from 'mongoose';
+import { Layout } from 'antd';
 import 'antd/dist/antd.css';
-import logo from '../images/logo.svg';
+// import logo from '../images/logo.svg';
 import '../css/Item.css';
 import HeaderMain from './HeaderMain';
 import ItemContainer from './content/ItemContainer';
-import Foods from './Foods';
+// import Foods from './Foods';
 
 class Item extends Component {
 
   render() {
-    const { Header, Content, Footer } = Layout;
+    const { Content, Footer } = Layout;
     return (
         <Layout>
           <HeaderMain />

@@ -115,7 +115,19 @@ http://localhost:3000/food
 * Added "whatwg-fetch": "^2.0.3"
 * `D:\WEBDEV\react\nutritionhq> yarn add whatwg-fetch`
 
+* Fetch was not working, failing on CORS
+* https://enable-cors.org/server_expressjs.html
 
+* Add into app.js
+
+```javascript
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+```
 
 
 

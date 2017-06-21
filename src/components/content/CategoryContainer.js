@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 import FontAwesome from 'react-fontawesome';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import 'antd/dist/antd.css';

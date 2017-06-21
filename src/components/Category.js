@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import mongoose from 'mongoose';
-import { Affix, Layout, Menu, Breadcrumb } from 'antd';
+// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+// import mongoose from 'mongoose';
+import { Layout } from 'antd';
 import 'antd/dist/antd.css';
-import logo from '../images/logo.svg';
 import '../css/Category.css';
 import HeaderMain from './HeaderMain';
 import CategoryContainer from './content/CategoryContainer';
-import Foods from './Foods';
 
 class Category extends Component {
 
@@ -17,7 +15,7 @@ class Category extends Component {
 
 
   render() {
-    const { Header, Content, Footer } = Layout;
+    const { Content, Footer } = Layout;
     return (
         <Layout>
           <HeaderMain />

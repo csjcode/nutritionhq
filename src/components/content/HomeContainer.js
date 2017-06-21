@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import mongoose from 'mongoose';
+// import { Link } from 'react-router-dom'
+// import mongoose from 'mongoose';
 import FontAwesome from 'react-fontawesome';
-import { Layout, Menu, Breadcrumb, Icon, Row, Col, Card } from 'antd';
+import { Row, Col, Card } from 'antd';
 import 'antd/dist/antd.css';
 import '../../css/HomeContainer.css';
+// import fetch from 'whatwg-fetch';
 
 class HomeContainer extends Component {
 
@@ -24,10 +25,10 @@ class HomeContainer extends Component {
     return(
         <div style={{ background: '#fff', padding: 40, minHeight: 380 }}>
           <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px',
-            marginTop: '40',paddingTop:'15', textAlign: 'left'}}>
-            <div style={{marginBottom:'20'}}>
-              <h1 style={{fontSize:'28', marginTop:'0', marginBottom:'0'}}>Home</h1>
-              <p style={{fontSize:'16', color:'#939393'}}>This website is to help track health</p>
+            marginTop: '40',paddingTop:'15px', textAlign: 'left'}}>
+            <div style={{marginBottom:'20px'}}>
+              <h1 style={{fontSize:'28px', marginTop:'0', marginBottom:'0'}}>Home</h1>
+              <p style={{fontSize:'16px', color:'#939393'}}>This website is to help track health</p>
               {this.getFood()}
 
             </div>

@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
-import mongoose from 'mongoose';
-import { Layout, Menu, Breadcrumb } from 'antd';
+// import mongoose from 'mongoose';
+import { Layout } from 'antd';
 import 'antd/dist/antd.css';
-import logo from '../images/logo.svg';
+// import logo from '../images/logo.svg';
 import '../css/Home.css';
 import HeaderMain from './HeaderMain';
 import HomeContainer from './content/HomeContainer';
-import Foods from './Foods';
+// import Foods from './Foods';
 
 class Home extends Component {
 
-  constructor (props) {
-    super(props);
-  }
+  // constructor (props) {
+  //   super(props);
+  // }
 
 
   render() {
-    const { Header, Content, Footer } = Layout;
+    const { Content, Footer } = Layout;
     return (
         <Layout>
           <HeaderMain />
