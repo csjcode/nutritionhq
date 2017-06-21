@@ -7,6 +7,18 @@ import 'antd/dist/antd.css';
 import '../../css/HomeContainer.css';
 
 class HomeContainer extends Component {
+
+  getFood(){
+    fetch('http://localhost:3000/food/id/1004')
+      .then(function(response) {
+        return response.json()
+      }).then(function(json) {
+        console.log('parsed json', json)
+      }).catch(function(ex) {
+        console.log('parsing failed', ex)
+      })
+  }
+
   render() {
 
     return(
@@ -16,7 +28,7 @@ class HomeContainer extends Component {
             <div style={{marginBottom:'20'}}>
               <h1 style={{fontSize:'28', marginTop:'0', marginBottom:'0'}}>Home</h1>
               <p style={{fontSize:'16', color:'#939393'}}>This website is to help track health</p>
-              <p><Link to="http://localhost:3000/food/id/1004">1004</Link></p>
+
             </div>
 
             <FontAwesome

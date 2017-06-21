@@ -112,6 +112,9 @@ http://localhost:3000/food
 * Search name: http://localhost:3000/food/name/Cheese
 * Search id: http://localhost:3000/food/id/1004
 
+* Added "whatwg-fetch": "^2.0.3"
+* `D:\WEBDEV\react\nutritionhq> yarn add whatwg-fetch`
+
 
 
 
