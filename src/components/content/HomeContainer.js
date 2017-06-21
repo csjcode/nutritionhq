@@ -23,9 +23,9 @@ class HomeContainer extends Component {
   render() {
 
     return(
-        <div style={{ background: '#fff', padding: 40, minHeight: 380 }}>
+        <div style={{ background: '#fff', padding:'40px', minHeight: '380px' }}>
           <div style={{backgroundColor:'#fff', color:'#000', fontSize:'17px',
-            marginTop: '40',paddingTop:'15px', textAlign: 'left'}}>
+            marginTop: '40px',paddingTop:'15px', textAlign: 'left'}}>
             <div style={{marginBottom:'20px'}}>
               <h1 style={{fontSize:'28px', marginTop:'0', marginBottom:'0'}}>Home</h1>
               <p style={{fontSize:'16px', color:'#939393'}}>This website is to help track health</p>

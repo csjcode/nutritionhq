@@ -3,9 +3,9 @@ import { Card } from 'antd';
 import 'antd/dist/antd.css';
 
 class CategoryList extends Component {
-  constructor (props) {
-    super(props);
-  }
+  // constructor (props) {
+  //   super(props);
+  // }
 
   componentWillMount () {
     // add event listeners (Flux Store, WebSocket, document, etc.)

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import { Layout, Menu, Breadcrumb, Header, Input } from 'antd';
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Layout, Menu, Breadcrumb, Input } from 'antd';
 import 'antd/dist/antd.css';
 // import Foods from './Foods.js';
 

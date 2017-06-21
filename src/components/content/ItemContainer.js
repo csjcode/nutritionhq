@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import FontAwesome from 'react-fontawesome';
+// import FontAwesome from 'react-fontawesome';
 import ItemData from './ItemData.js';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+// import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import '../../css/ItemContainer.css';
 
