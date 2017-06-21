@@ -28,6 +28,7 @@ class HomeContainer extends Component {
             <div style={{marginBottom:'20'}}>
               <h1 style={{fontSize:'28', marginTop:'0', marginBottom:'0'}}>Home</h1>
               <p style={{fontSize:'16', color:'#939393'}}>This website is to help track health</p>
+              {this.getFood()}
 
             </div>
 
