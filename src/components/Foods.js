@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 class Foods extends Component {
+
   render() {
     return(
       <div>
+
         <p>Spinach (Spinacia oleracea) is an edible flowering plant in the family Amaranthaceae native to central and western Asia. Its leaves are eaten as a vegetable.</p>
 
         <p>

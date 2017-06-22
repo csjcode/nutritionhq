@@ -9,16 +9,7 @@ import '../../css/HomeContainer.css';
 
 class HomeContainer extends Component {
 
-  getFood(){
-    fetch('http://localhost:3000/food/id/1004')
-      .then(function(response) {
-        return response.json()
-      }).then(function(json) {
-        console.log('parsed json', json)
-      }).catch(function(ex) {
-        console.log('parsing failed', ex)
-      })
-  }
+
 
   render() {
 
@@ -29,7 +20,6 @@ class HomeContainer extends Component {
             <div style={{marginBottom:'20px'}}>
               <h1 style={{fontSize:'28px', marginTop:'0', marginBottom:'0'}}>Home</h1>
               <p style={{fontSize:'16px', color:'#939393'}}>This website is to help track health</p>
-              {this.getFood()}
 
             </div>
 
