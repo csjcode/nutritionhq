@@ -7,27 +7,33 @@ import 'antd/dist/antd.css';
 import '../../css/ItemContainer.css';
 
 class ItemContainer extends Component {
+  state = {
+    dataLong_Desc: ''
+  };
+
   constructor(props) {
-      super(props);
-      this.state = {
-         jsonData: ''
-      }
-
-
+    super(props);
   }
-  getFood(idnum){
-    fetch('http://localhost:3000/food/id/' + idnum)
-      .then(function(response) {
+
+  loadData(){
+    fetch('http://localhost:3000/food/id/1010')
+      .then(response => {
         return response.json()
-      }).then(function(json) {
-        console.log('parsed json: ', json.Long_Desc)
+      }).then(json => {
+        var Long_Desc = json.Long_Desc;
         this.setState({
-          jsonData: json.Long_Desc
+          dataLong_Desc: Long_Desc
         });
-      }).catch(function(ex) {
+      }).catch(ex => {
         console.log('parsing failed', ex)
-      })
+      });
   }
+
+  componentDidMount(){
+    this.loadData()
+
+  }
+
   render() {
     return(
       <div style={{ background: '#fff', padding: '40px', minHeight: '380px' }}>
@@ -36,10 +42,10 @@ class ItemContainer extends Component {
           <div style={{marginBottom:'20px'}}>
             <h1 style={{fontSize:'28px', marginTop:'0', marginBottom:'0'}}>{this.props.pagename}</h1>
             <p style={{fontSize:'16px', color:'#939393'}}>This is the subheading for {this.props.itemNum}</p>
-
-
+            <div>{this.state.dataLong_Desc}</div>
             <ItemData pagename={this.props.pagename}/>
-            <div>{this.state.jsonData}</div>
+
+
 
           </div>
         </div>

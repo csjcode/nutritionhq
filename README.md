@@ -131,7 +131,8 @@ app.use(function(req, res, next) {
 
 
 
-
+* VERY IMPORTANT Fetch GOTCHA: Must use fat arrows. MUST! or else it loses scope and cannot set state properly.
+https://stackoverflow.com/questions/39798836/how-to-handle-fetch-api-ajax-response-in-react
 
 
 
