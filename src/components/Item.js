@@ -17,7 +17,7 @@ class Item extends Component {
         <Layout>
           <HeaderMain />
           <Content style={{ padding: '0 50px', marginTop: 64 }}>
-            <ItemContainer pagename={this.props.match.params.item} itemNum='1010'/>
+            <ItemContainer pagename={this.props.match.params.item} itemNum={this.props.match.params.item}/>
           </Content>
           <Footer style={{ textAlign: 'center' }}>
               My footer
